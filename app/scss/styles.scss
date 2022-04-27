@@ -1,2 +1,28 @@
+//Module Example
+@use 'topPage';
+@use "sass:math";
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'variables';
+
+//Extends/Inheritence Example
+%darkMode{
+  color: #000 !important;
+}
+
+//Mixin, Interpolation, and Boolean Example
+@mixin whiteText($dark: false){
+  color: #fff;
+  @if $dark {
+    @extend %darkMode;
+  }
+}
+
+main{
+  @include whiteText();
+  background-color: $primary;
+  //Nesting Example
+  div{
+    //Operators Example
+    margin-bottom: ((1000em + 10em) * 0) + 1em;
+  }
+}
