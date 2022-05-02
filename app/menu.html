@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Weiner Works</title>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-light bg-light flex-column flex-sm-row">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="navbar-brand nav-link" href="index.html">Weiner Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">About Us</a>
+        </li>
+      </ul>
+    </nav>
+  	<main class="flex-shrink-0">
+      <div class="container menu-container">
+        <ul class="nav nav-tabs justify-content-center flex xolumn flex-xm-row">
+          <li class="nav-item">
+            <button class="nav-link active" id="menu-hotdog-tab" data-bs-toggle="tab" data-bs-data="#hotDog" type="button" role="tab" aria-controls="hogDog" aria-selected="true">Hot Dogs</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="menu-burger-tab" data-bs-toggle="tab" data-bs-data="#burger" type="button" role="tab" aria-controls="burger" aria-selected="false">Burgers</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="menu-other-tab" data-bs-toggle="tab" data-bs-data="#other" type="button" role="tab" aria-controls="other" aria-selected="false">Sandwiches and Sides</button>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="hotDog" role="tabpanel" aria-labelledby="menu-hotdog-tab">
+          Hotdog Menu
+        </div>
+        <div class="tab-pane fade" id="burger" role="tabpanel" aria-labelledby="menu-burger-tab">
+          Burger Menu
+        </div>
+        <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="menu-other-tab">
+          Other Menu
+        </div>
+      </div>
+    </main>
+    <footer <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+  </body>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</html>
